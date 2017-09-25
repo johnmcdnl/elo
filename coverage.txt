@@ -1,0 +1,5 @@
+mode: atomic
+github.com\johnmcdnl\elo\elo.go:28.58,29.34 1 13
+github.com\johnmcdnl\elo\elo.go:32.2,40.15 3 9
+github.com\johnmcdnl\elo\elo.go:29.34,31.3 1 4
+github.com\johnmcdnl\elo\elo.go:43.27,52.2 6 9

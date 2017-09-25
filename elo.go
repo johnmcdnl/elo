@@ -1,8 +1,8 @@
 package elo
 
 import (
-	"math"
 	"errors"
+	"math"
 )
 
 type Result float64

@@ -1,13 +1,12 @@
 language: go
-sudo: true
+
 go:
+  - 1.x
+  - 1.6
+  - 1.7.x
+  - 1.8.x
   - 1.9.x
-
-before_install:
-  - go get -t -v ./...
-
-script:
-  - ./go.test.sh
+  - master
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)

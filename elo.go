@@ -5,14 +5,17 @@ import (
 	"math"
 )
 
+// Result is a Win | Draw | Loss
 type Result float64
 
+// Result codes
 const (
 	Win   = Result(1)
 	Draw  = Result(0.5)
 	Loose = Result(0)
 )
 
+// ELO is the Elo ranking item
 type ELO struct {
 	RA  float64
 	RB  float64
@@ -25,6 +28,7 @@ type ELO struct {
 	RBN float64
 }
 
+// New returns a new ELO
 func New(rA, rB, k float64, sa, sb Result) (*ELO, error) {
 	if float64(sa)+float64(sb) != 1 {
 		return nil, errors.New("invalid result")
